@@ -18,10 +18,10 @@ def PDF_to_mp3(path: str, file_language: str):
     filename = splitext(basename(path))[0]
     text.save(filename + '.mp3')
 
-    if not exists('MP3'):
-        mkdir('MP3')
+    if not exists('Audiotext'):
+        mkdir('Audiotext')
     else:
-        move(filename + '.mp3', 'MP3')
+        move(filename + '.mp3', 'Audiotext')
 
 
 
